@@ -1,0 +1,71 @@
+<resources>
+    //LOGIN
+    <string name="app_name">Gestor de votaciones</string>
+    <string name="loginHintInputUser">Escribir usuario</string>
+    <string name="loginHintInputPassword">Escribir contraseña</string>
+    <string name="loginTextButtonLogin">Entrar</string>
+    <string name="loginTextButtonRegister">Registrarse</string>
+
+    //REGISTRO
+    <string name="registerTextButtonReturn">Volver</string>
+    <string name="registerHintInputFirstName">Nombre</string>
+    <string name="registerHintInputLastName">Apellido</string>
+    <string name="registerHintInputDni">DNI</string>
+    <string name="registerHintInputEmail">Email</string>
+    <string name="registerHintInputNamePasswordRepite">Repetir Password</string>
+    <string name="registerHintInputPassword">Password</string>
+    <string name="registerHintInputStreet">Calle</string>
+    <string name="registerHintInputNumber">Altura</string>
+    <string name="registerTextButtonRegister">Registrarse</string>
+
+    //INICIO
+    <string name="startTextButtonExit">Cerrar Sesión</string>
+    <string name="startTextButtonUsersAdmin">Gestion Usuarios</string>
+    <string name="startTextButtonVote">Votar</string>
+    <string name="startTextButtonCreateVote">Gestion Votaciones</string>
+    <string name="startTextButtonMyUser">Mi Usuario</string>
+
+    //MI USUARIO
+    <string name="myUserHintInputFirstName">Nombre</string>
+    <string name="myUserHintInputLastName">Apellido</string>
+    <string name="myUserHintInputDni">DNI</string>
+    <string name="myUserHintInputMail">EMail</string>
+    <string name="myUserHintInputStreet">Calle</string>
+    <string name="myUserHintInputStreetNumber">Altura</string>
+    <string name="myUserHintInputPassword">Password</string>
+    <string name="myUserHintInputRepitePassword">Repetir Password</string>
+    <string name="myUserTextButtonModify">Modificar</string>
+    <string name="myUserTextButtonDelete">Eliminar</string>
+    <string name="myUserTextButtonMap">Ver Mapa</string>
+
+    //ITEM USUARIO
+    <string name="userItemTextCheckBoxAdmin">Es Admin?</string>
+
+    //USERS MANAGER
+    <string name="usersManagerTextButtonCreate">Alta</string>
+
+    //CREAR VOTACION
+    <string name="createVotesButtonTextCreate">Crear</string>
+
+    //VOTACION
+    <string name="votingInputDescription">Describa lo que quiere votar</string>
+    <string name="votingTextGuide">
+        Ingrese en el campo la descripcion del asunto por el que desea votar y hasta 3 opciones de voto
+    </string>
+    <string name="votingInputOption1">Opción 1</string>
+    <string name="votingInputOption2">Opción 2</string>
+    <string name="votingInputOption3">Opción 3</string>
+    <string name="votingButtonGenerate">Generar</string>
+
+    //VER ITEM VOTACION
+    <string name="votingViewInputDescription">Descripción vacia</string>
+    <string name="votingViewInputOption1">Opción 1 vacia</string>
+    <string name="votingViewInputOption2">Opción 2 vacia</string>
+    <string name="votingViewInputOption3">Opción 3 vacia</string>
+
+    <string name="votingViewButtonModify">Modificar</string>
+    <string name="votingViewTextOfModify">Puede modificar tanto el campo descripción como las opciones cambiando, agregando o borrando información</string>
+    <string name="votingViewButtonDelete">Borrar</string>
+    <string name="votingViewTextOfDelete">Elimina la votación del sistema de gestion de votaciones</string>
+
+</resources>
