@@ -6,120 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Registro">
 
-    <EditText
-        android:id="@+id/registerInputFirstName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:hint="@string/registerHintInputFirstName"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/registerInputLastName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/registerInputLastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:hint="@string/registerHintInputLastName"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/registerInputDni"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/registerButtonRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:text="@string/registerTextButtonRegister"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.635"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/registerInputPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:hint="@string/registerHintInputPassword"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/registerInputPasswordRepite"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/registerInputPasswordRepite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:hint="@string/registerHintInputNamePasswordRepite"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/registerInputStreet"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/registerInputDni"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:hint="@string/registerHintInputDni"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/registerInputEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/registerInputEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:hint="@string/registerHintInputEmail"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/registerInputPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/registerInputStreet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:hint="@string/registerHintInputStreet"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/registerInputNumber"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/registerInputNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:hint="@string/registerHintInputNumber"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/registerButtonRegister"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <Button
         android:id="@+id/registerButtonReturn"
         android:layout_width="wrap_content"
@@ -130,6 +16,157 @@
         android:backgroundTint="#FF3D00"
         android:text="@string/registerTextButtonReturn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/registerCard"
+        android:layout_width="273dp"
+        android:layout_height="535dp"
+        android:layout_marginBottom="70dp"
+        app:cardBackgroundColor="@color/primaryContainer"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardRegister"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primaryContainer"
+            android:elevation="@dimen/cardview_default_elevation">
+
+
+            <EditText
+                android:id="@+id/registerInputFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:ems="10"
+                android:hint="@string/registerHintInputFirstName"
+                android:inputType="textPersonName"
+                android:textColor="@color/onBackground"
+                android:textColorHint="@color/onBackground"
+                app:layout_constraintBottom_toTopOf="@+id/registerInputLastName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/registerInputLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:ems="10"
+                android:hint="@string/registerHintInputLastName"
+                android:inputType="textPersonName"
+                android:textColor="@color/onBackground"
+                android:textColorHint="@color/onBackground"
+                app:layout_constraintBottom_toTopOf="@+id/registerInputDni"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/registerButtonRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:text="@string/registerTextButtonRegister"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/registerInputPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:ems="10"
+                android:hint="@string/registerHintInputPassword"
+                android:inputType="textPassword"
+                android:textColor="@color/onBackground"
+                android:textColorHint="@color/onBackground"
+                app:layout_constraintBottom_toTopOf="@+id/registerInputPasswordRepite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/registerInputPasswordRepite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:ems="10"
+                android:hint="@string/registerHintInputNamePasswordRepite"
+                android:inputType="textPassword"
+                android:textColor="@color/onBackground"
+                android:textColorHint="@color/onBackground"
+                app:layout_constraintBottom_toTopOf="@+id/registerInputStreet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/registerInputDni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:ems="10"
+                android:hint="@string/registerHintInputDni"
+                android:inputType="number"
+                android:textColor="@color/onBackground"
+                android:textColorHint="@color/onBackground"
+                app:layout_constraintBottom_toTopOf="@+id/registerInputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/registerInputEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:ems="10"
+                android:hint="@string/registerHintInputEmail"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/onBackground"
+                android:textColorHint="@color/onBackground"
+                app:layout_constraintBottom_toTopOf="@+id/registerInputPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/registerInputStreet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:ems="10"
+                android:hint="@string/registerHintInputStreet"
+                android:inputType="textPersonName"
+                android:textColor="@color/onBackground"
+                android:textColorHint="@color/onBackground"
+                app:layout_constraintBottom_toTopOf="@+id/registerInputNumber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/registerInputNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="@string/registerHintInputNumber"
+                android:inputType="textPersonName"
+                android:textColor="@color/onBackground"
+                android:textColorHint="@color/onBackground"
+                app:layout_constraintBottom_toTopOf="@+id/registerButtonRegister"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

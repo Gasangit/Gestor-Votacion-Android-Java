@@ -7,4 +7,21 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#cfbcff</color>
+    <color name="onPrimary">#381e72</color>
+    <color name="primaryContainer">#4f378a</color>
+    <color name="onPrimaryContainer">#e9ddff</color>
+
+    <color name="generalFontColorOnPrimary">#381e72</color>
+    <color name="generalFontColorOnPrimaryContainer">#e9ddff</color>
+    <color name="generalFontColorOnBackground">#e6e1e6</color>
+
+    <color name="background">#1c1b1e</color>
+    <color name="onBackground">#e6e1e6</color>
+
+    <color name="error">#ffb4ab</color>
+    <color name="onError">#690005</color>
+    <color name="errorContainer">#93000a</color>
+    <color name="onErrorContainer">#ffdad6</color>
 </resources>

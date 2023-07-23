@@ -88,26 +88,22 @@
         android:id="@+id/myUserButtonDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/myUserTextButtonDelete"
-        app:layout_constraintBottom_toBottomOf="@+id/myUserButtonModify"
+        app:layout_constraintBottom_toTopOf="@+id/myUserButtonMap"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/myUserButtonModify"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/myUserButtonModify"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/myUserTextButtonModify"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/myUserButtonDelete"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myUserInputRepitePassword"
-        app:layout_constraintVertical_bias="0.143" />
+        app:layout_constraintBottom_toTopOf="@+id/myUserButtonDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/myUserInputRepitePassword"
@@ -125,11 +121,11 @@
         android:id="@+id/myUserButtonMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="48dp"
         android:text="@string/myUserTextButtonMap"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button

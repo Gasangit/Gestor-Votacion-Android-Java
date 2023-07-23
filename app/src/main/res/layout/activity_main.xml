@@ -6,50 +6,78 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/loginInputUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:ems="10"
-        android:hint="@string/loginHintInputUser"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/loginInputPassword"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="319dp"
+        android:layout_height="314dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/manos_arriba" />
 
-    <Button
-        android:id="@+id/loginButtonLogin"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="@string/loginTextButtonLogin"
-        app:layout_constraintBottom_toTopOf="@+id/loginButtonRegister"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/loginButtonRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
-        android:text="@string/loginTextButtonRegister"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginCard"
+        android:layout_width="247dp"
+        android:layout_height="225dp"
+        app:cardBackgroundColor="@color/primaryContainer"
+        app:cardCornerRadius="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
-    <EditText
-        android:id="@+id/loginInputPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
-        android:ems="10"
-        android:hint="@string/loginHintInputPassword"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/loginButtonLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primaryContainer">
 
+            <EditText
+                android:id="@+id/loginInputUser"
+                android:layout_width="194dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:autofillHints="text"
+                android:fontFamily="sans-serif"
+                android:hint="@string/loginHintInputUser"
+                android:inputType="textPersonName"
+                android:textColor="@color/onBackground"
+                android:textColorHint="@color/onBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/loginButtonLogin"
+                android:layout_width="152dp"
+                android:layout_height="48dp"
+                android:text="@string/loginTextButtonLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loginInputPassword" />
+
+            <Button
+                android:id="@+id/loginButtonRegister"
+                android:layout_width="152dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="28dp"
+                android:text="@string/loginTextButtonRegister"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loginButtonLogin" />
+
+            <EditText
+                android:id="@+id/loginInputPassword"
+                android:layout_width="194dp"
+                android:layout_height="48dp"
+                android:hint="@string/loginHintInputPassword"
+                android:inputType="textPassword"
+                android:textColor="@color/onBackground"
+                android:textColorHint="@color/onBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loginInputUser" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
